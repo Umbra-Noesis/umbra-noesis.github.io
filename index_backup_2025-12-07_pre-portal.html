@@ -1,0 +1,215 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+    <style>/* Ecosystem modules pill buttons */.modules-section { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(148, 163, 184, 0.25); } .modules-section h2 { margin-bottom: 0.6rem; font-size: 1.3rem; } .modules-section p { max-width: 44rem; font-size: 0.95rem; color: #9ca3af; } .module-pills { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; } .module-pill { position: relative; display: inline-flex; align-items: center; padding: 0.55rem 1.2rem; border-radius: 999px; background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(148, 163, 184, 0.5); font-size: 0.85rem; color: #e5e7eb; text-decoration: none; cursor: pointer; transition: background 0.16s ease-out,
+        border-color 0.16s ease-out,
+        color 0.16s ease-out,
+        box-shadow 0.16s ease-out; } .module-pill:hover { background: rgba(37, 99, 235, 0.22); border-color: #3b82f6; color: #f9fafb; box-shadow: 0 14px 32px rgba(15, 23, 42, 0.9); } .pill-label { white-space: nowrap; } .pill-tooltip { position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translate(-50%, 6px) scale(0.97); width: min(320px, 80vw); padding: 0.75rem 0.9rem; border-radius: 1rem; background: rgba(15, 23, 42, 0.97); border: 1px solid rgba(148, 163, 184, 0.7); box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95); font-size: 0.8rem; color: #9ca3af; opacity: 0; pointer-events: none; transition: opacity 0.14s ease-out,
+        transform 0.14s ease-out; z-index: 20; } .module-pill::after { content: ""; position: absolute; left: 50%; bottom: calc(100% + 4px); transform: translateX(-50%); border-width: 6px; border-style: solid; border-color: rgba(15, 23, 42, 0.97) transparent transparent transparent; opacity: 0; transition: opacity 0.14s ease-out; z-index: 19; } .modules-section { margin-top: 3rem; padding: 2rem 1.5rem 3rem; border-top: 1px solid rgba(148, 163, 184, 0.25); max-width: 1100px; margin-left: auto; margin-right: auto; text-align: center; } .modules-section h2 { margin-bottom: 0.6rem; font-size: 1.3rem; } .modules-section p { max-width: 44rem; font-size: 0.95rem; color: #9ca3af; margin-left: auto; margin-right: auto; } .module-pills { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; justify-content: center; }</style>
+</head>
+<meta charset="utf-8">
+<title>Umbra-Noesis — Founders Edition</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AACP (Advanced AI Communication Protocol) is the deterministic message layer of the Umbra-Noesis stack. It defines how humans, local AI systems, tools, and memory exchange information in a stable, structured way across nodes.">
+<meta property="og:title" content="AACP — Advanced AI Communication Protocol">
+<meta property="og:description" content="The protocol layer that turns intent into structure across the Umbra-Noesis ecosystem: message schemas, contracts, and routing rules for human–AI communication.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aacp-stack.net/">
+<meta name="description" content="Umbra-Noesis is a private, full-stack framework for tightly-integrated human–AI systems: local OS, hardware, cognition, and protocol language. The complete system remains in-house — only the components are licensed.">
+<link rel="icon" href="/assets/img/2025-10-22_18-54.png" type="image/png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Umbra-Noesis — Bridging the gap between man and machine</title>
+<!-- Tailwind via CDN for v1 -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome (icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-xxxxxxxx" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<meta name="description" content="Umbra-Noesis — a private, full-stack human–AI ecosystem: OS, hardware, local cognition, and protocol language for human-AI interaction."/> 
+<body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Page wrapper -->
+    <div class="min-h-screen flex flex-col">
+        <!-- Top bar / nav -->
+        <header class="border-b border-slate-800/70 bg-slate-950/80 backdrop-blur">
+            <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="h-9 w-9 rounded-xl border border-sky-400/70 bg-sky-500/10 flex items-center justify-center">
+                        <img src="assets/img/ChatGPT%20Image%20Dec%205%2C%202025%2C%2002_30_34%20PM.png"/>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline gap-2"><span class="font-semibold tracking-wide text-slate-50">Umbra-Noesis</span><span class="text-xs uppercase tracking-[0.18em] text-slate-500">Founders Edition</span>
+                        </div>
+                        <p class="text-xs text-slate-500">Bridging the gap between man and machine.</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300"><a href="#ecosystem" class="hover:text-sky-300">Ecosystem</a><a href="#layers" class="hover:text-sky-300">System Layers</a><a href="#licensing" class="hover:text-sky-300">Licensing</a><a href="#contact" class="hover:text-sky-300">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <!-- Main content -->
+        <main class="flex-1">
+            <!-- Hero -->
+            <section class="border-b border-slate-900 bg-gradient-to-b from-slate-950 to-slate-900">
+                <div class="mx-auto max-w-6xl px-4 py-16 lg:py-20 grid gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] items-center">
+                    <div>
+                        <p class="text-xs font-semibold tracking-[0.25em] text-sky-300/80 uppercase mb-3">
+              Private Human–AI Ecosystem </p>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-50 mb-4">
+              Intelligent by design.<br class="hidden sm:block"/>
+              Aware by choice. </h1>
+                        <p class="text-base sm:text-lg text-slate-300 max-w-xl mb-6">
+              Umbra-Noesis is a private, full-stack framework for building
+              tightly-integrated human–AI systems: local OS, hardware, cognition,
+              and protocol language. The complete system remains in-house —
+              only the components are licensed. </p>
+                        <div class="flex flex-wrap gap-3 mb-6"><span class="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-200"> <i class="fa-solid fa-microchip"></i> PCe Systems </span><span class="inline-flex items-center gap-2 rounded-full border border-indigo-400/40 bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-200"> <i class="fa-solid fa-code"></i> UmbraOS </span><span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-200"> <i class="fa-solid fa-brain"></i> EVAA Local Cognition </span><span class="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-200"> <i class="fa-solid fa-diagram-project"></i> HACEP / AACP Protocols </span>
+                        </div>
+                        <div class="flex flex-wrap gap-3"><a href="#licensing" class="inline-flex items-center gap-2 rounded-lg bg-sky-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-sm hover:bg-sky-400">
+                Licensing the parts <i class="fa-solid fa-arrow-right text-xs"></i> </a><a href="#ecosystem" class="inline-flex items-center gap-2 rounded-lg border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 hover:border-slate-500">
+                Explore the ecosystem </a>
+                        </div>
+                    </div>
+                    <!-- Right column: System map -->
+                    <div class="relative">
+                        <div class="absolute -inset-6 rounded-3xl bg-sky-500/10 blur-2xl opacity-60"></div>
+                        <div class="relative rounded-3xl border border-slate-800 bg-slate-950/80 p-5 shadow-xl">
+                            <div class="mb-4 flex items-center justify-between"><span class="text-xs font-semibold tracking-[0.22em] uppercase text-slate-400">
+                  Umbra-Noesis Stack </span>
+                            </div>
+                            <div class="space-y-2 text-xs">
+                                <div class="rounded-xl border border-sky-500/50 bg-sky-500/10 px-3 py-2">
+                                    <div class="flex items-center justify-between"><span class="font-semibold text-sky-100">Umbra-Noesis</span><span class="text-[0.7rem] text-sky-200/80">Ecosystem Core</span>
+                                    </div>
+                                    <p class="mt-1 text-[0.7rem] text-sky-100/80">
+                    Corporate layer, governance, and mission: bridging human intention and AI structure. </p>
+                                </div>
+                                <div class="grid gap-2 sm:grid-cols-2">
+                                    <div class="rounded-xl border border-indigo-500/40 bg-indigo-500/10 px-3 py-2">
+                                        <p class="text-[0.75rem] font-semibold text-indigo-100">Umbra-Noesis OS (UmbraOS)</p>
+                                        <p class="text-[0.7rem] text-indigo-100/80">
+                      Linux-based AI OS with embedded tools, runners, and safety layers. </p>
+                                    </div>
+                                    <div class="rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3 py-2">
+                                        <p class="text-[0.75rem] font-semibold text-emerald-100">EVAA Local Cognition</p>
+                                        <p class="text-[0.7rem] text-emerald-100/80">
+                      Private, on-device cognitive layer for day-to-day reasoning and orchestration. </p>
+                                    </div>
+                                </div>
+                                <div class="grid gap-2 sm:grid-cols-2">
+                                    <div class="rounded-xl border border-sky-500/40 bg-sky-500/5 px-3 py-2">
+                                        <p class="text-[0.75rem] font-semibold text-sky-100">PCe Systems</p>
+                                        <p class="text-[0.7rem] text-sky-100/80">
+                      Curated hardware stacks designed to host Umbra-Noesis as a first-class citizen. </p>
+                                    </div>
+                                    <div class="rounded-xl border border-amber-500/40 bg-amber-500/10 px-3 py-2">
+                                        <p class="text-[0.75rem] font-semibold text-amber-100">HACEP / AACP</p>
+                                        <p class="text-[0.7rem] text-amber-100/80">
+                      Protocol language for deterministic human–AI communication. </p>
+                                    </div>
+                                </div>
+                                <div class="rounded-xl border border-fuchsia-500/40 bg-fuchsia-500/10 px-3 py-2">
+                                    <p class="text-[0.75rem] font-semibold text-fuchsia-100">Ghost Protocol / MMC</p>
+                                    <p class="text-[0.7rem] text-fuchsia-100/80">
+                    Long-term distributed cognition and continuity across nodes, devices, and time. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Ecosystem overview -->
+            <section id="ecosystem" class="border-b border-slate-900 bg-slate-950">
+                <div class="mx-auto max-w-6xl px-4 py-12 space-y-6">
+                    <div class="max-w-2xl">
+                        <h2 class="text-xl sm:text-2xl font-semibold text-slate-50 mb-2">
+              One ecosystem. Many specialized layers. </h2>
+                        <p class="text-sm sm:text-base text-slate-300">
+              Umbra-Noesis is not a single app or device. It’s a cohesive stack:
+              operating system, hardware, cognitive engines, and the language
+              they all use to talk to you — and to each other. </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Licensing philosophy -->
+            <section id="licensing" class="border-b border-slate-900 bg-slate-950">
+                <div class="mx-auto max-w-6xl px-4 py-12 grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] items-start">
+                    <div>
+                        <h2 class="text-xl sm:text-2xl font-semibold text-slate-50 mb-3">
+              We don’t sell the system. We license the parts. </h2>
+                        <p class="text-sm sm:text-base text-slate-300 mb-4">
+              The complete Umbra-Noesis environment — local OS, cognition,
+              hardware integration, and Ghost Protocol — remains private and
+              exclusive. What we license are the components that can safely
+              enhance existing platforms. </p>
+                        <ul class="space-y-2 text-sm text-slate-200">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-square-check mt-1 text-sky-300"></i><span><strong>HACEP / AACP</strong> — communication protocols and reference implementations.</span>
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-square-check mt-1 text-sky-300"></i><span><strong>Runner shells</strong> — orchestration layers for local and cloud models.</span>
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-square-check mt-1 text-sky-300"></i><span><strong>Memory and UI components</strong> — injectors, structured tools, and safe interfaces.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5 text-sm text-slate-200">
+                        <p class="text-xs font-semibold tracking-[0.24em] text-slate-500 uppercase mb-3">
+              Distilled </p>
+                        <p class="text-lg font-semibold text-slate-50 mb-2">
+              ? everything </p>
+                        <p class="text-xs text-slate-400">
+              Question everything. Especially the way AI systems are deployed,
+              owned, and controlled. Umbra-Noesis exists to give builders and
+              operators a different option: local-first, protocol-driven, and
+              unapologetically human-centric. </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact -->
+            <section id="contact" class="bg-slate-950">
+                <div class="mx-auto max-w-6xl px-4 py-10 border-t border-slate-900">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <div>
+                            <p class="text-sm font-semibold text-slate-200">Contact</p>
+                            <p class="text-sm text-slate-400">
+                For partnership, licensing, or quiet conversations: </p>
+                        </div>
+                        <div class="text-sm">
+                            <p class="text-slate-200"> <i class="fa-solid fa-envelope text-sky-300 mr-2"></i> <span class="font-mono">umbra-noesis@pm.me</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Ecosystem Modules -->
+        <section id="modules" class="section modules-section">
+            <h2>Modular components in the Umbra-Noesis ecosystem</h2>
+            <p>
+        Each major layer of the stack has its own space. We license individual components
+        so they can safely enhance existing platforms without exposing the full system.
+        Hover a module to see what lives there. </p>
+            <div class="module-pills">
+                <a class="module-pill" href="https://umbra-noesis-os.com" target="_blank" rel="noopener"> <span class="pill-label">Umbra-Noesis OS</span> <span class="pill-tooltip">
+            The operating system layer: local-first, AI-aware, designed to host cognition, tools,
+            and secure autonomy as first-class citizens. </span> </a>
+                <a class="module-pill" href="https://evaa-cognition.com" target="_blank" rel="noopener"> <span class="pill-label">EVAA Local Cognition</span> <span class="pill-tooltip">
+            The on-device cognitive core: runner, memory, and orchestration built for real-time
+            reasoning under real-world constraints. </span> </a>
+                <a class="module-pill" href="https://pce-system.com" target="_blank" rel="noopener"> <span class="pill-label">PCe Systems</span> <span class="pill-tooltip">
+            Hardware designed around cognition instead of the other way around. Modular PCe
+            configurations for founders, builders, and field deployments. </span> </a>
+                <a class="module-pill" href="https://eve-systems.com" target="_blank" rel="noopener"> <span class="pill-label">E.V.E. Systems</span> <span class="pill-tooltip">
+            The external interface and experience layer: UI, flows, and integrations that sit on
+            top of the Umbra-Noesis stack. </span> </a>
+                <a class="module-pill" href="https://umbra-ai.link" target="_blank" rel="noopener"> <span class="pill-label">Umbra-AI Link</span> <span class="pill-tooltip">
+            A routing and identity endpoint that can later unify invites, shared access, and
+            public links into the ecosystem. </span> </a>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="border-t border-slate-900 bg-slate-950">
+            <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-slate-500"><span>© <span id="year"></span> Umbra-Noesis. All rights reserved.</span><span>Umbra-Noesis — Bridging the gap between man and machine.</span>
+            </div>
+        </footer>
+    </div>
+    <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>

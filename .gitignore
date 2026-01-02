@@ -1,2 +1,6 @@
 _pgbackup/
 
+
+# Pinegrow backups (do not commit)
+_pgbackup/
+
