@@ -18,110 +18,10 @@
         <!-- Font Awesome (icons)
        NOTE: Your integrity value was fake. Either remove it (below) or replace with the real hash. -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer"/>
-        <style>
-    /* Ecosystem modules pill buttons */
-    .modules-section {
-      margin-top: 3rem;
-      padding: 2rem 1.5rem 3rem;
-      border-top: 1px solid rgba(148, 163, 184, 0.25);
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-
-    .modules-section h2 {
-      margin-bottom: 0.6rem;
-      font-size: 1.3rem;
-    }
-
-    .modules-section p {
-      max-width: 44rem;
-      font-size: 0.95rem;
-      color: #9ca3af;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .module-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-      justify-content: center;
-    }
-
-    .module-pill {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      padding: 0.55rem 1.2rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(148, 163, 184, 0.5);
-      font-size: 0.85rem;
-      color: #e5e7eb;
-      text-decoration: none;
-      cursor: pointer;
-      transition:
-        background 0.16s ease-out,
+        <style>/* Ecosystem modules pill buttons */.modules-section { margin-top: 3rem; padding: 2rem 1.5rem 3rem; border-top: 1px solid rgba(148, 163, 184, 0.25); max-width: 1100px; margin-left: auto; margin-right: auto; text-align: center; } .modules-section h2 { margin-bottom: 0.6rem; font-size: 1.3rem; } .modules-section p { max-width: 44rem; font-size: 0.95rem; color: #9ca3af; margin-left: auto; margin-right: auto; } .module-pills { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; justify-content: center; } .module-pill { position: relative; display: inline-flex; align-items: center; padding: 0.55rem 1.2rem; border-radius: 999px; background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(148, 163, 184, 0.5); font-size: 0.85rem; color: #e5e7eb; text-decoration: none; cursor: pointer; transition: background 0.16s ease-out,
         border-color 0.16s ease-out,
         color 0.16s ease-out,
-        box-shadow 0.16s ease-out;
-    }
-
-    .module-pill:hover {
-      background: rgba(37, 99, 235, 0.22);
-      border-color: #3b82f6;
-      color: #f9fafb;
-      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.9);
-    }
-
-    .pill-label { white-space: nowrap; }
-
-    .pill-tooltip {
-      position: absolute;
-      left: 50%;
-      bottom: calc(100% + 10px);
-      transform: translate(-50%, 6px) scale(0.97);
-      width: min(320px, 80vw);
-      padding: 0.75rem 0.9rem;
-      border-radius: 1rem;
-      background: rgba(15, 23, 42, 0.97);
-      border: 1px solid rgba(148, 163, 184, 0.7);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
-      font-size: 0.8rem;
-      color: #9ca3af;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.14s ease-out, transform 0.14s ease-out;
-      z-index: 20;
-      text-align: left;
-    }
-
-    .module-pill::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: calc(100% + 4px);
-      transform: translateX(-50%);
-      border-width: 6px;
-      border-style: solid;
-      border-color: rgba(15, 23, 42, 0.97) transparent transparent transparent;
-      opacity: 0;
-      transition: opacity 0.14s ease-out;
-      z-index: 19;
-    }
-
-    /* MISSING in your original: make tooltip appear on hover */
-    .module-pill:hover .pill-tooltip {
-      opacity: 1;
-      transform: translate(-50%, 0px) scale(1);
-    }
-    .module-pill:hover::after {
-      opacity: 1;
-    }
-  </style>
+        box-shadow 0.16s ease-out; } .module-pill:hover { background: rgba(37, 99, 235, 0.22); border-color: #3b82f6; color: #f9fafb; box-shadow: 0 14px 32px rgba(15, 23, 42, 0.9); } .pill-label { white-space: nowrap; } .pill-tooltip { position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translate(-50%, 6px) scale(0.97); width: min(320px, 80vw); padding: 0.75rem 0.9rem; border-radius: 1rem; background: rgba(15, 23, 42, 0.97); border: 1px solid rgba(148, 163, 184, 0.7); box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95); font-size: 0.8rem; color: #9ca3af; opacity: 0; pointer-events: none; transition: opacity 0.14s ease-out, transform 0.14s ease-out; z-index: 20; text-align: left; } .module-pill::after { content: ""; position: absolute; left: 50%; bottom: calc(100% + 4px); transform: translateX(-50%); border-width: 6px; border-style: solid; border-color: rgba(15, 23, 42, 0.97) transparent transparent transparent; opacity: 0; transition: opacity 0.14s ease-out; z-index: 19; } /* MISSING in your original: make tooltip appear on hover */.module-pill:hover .pill-tooltip { opacity: 1; transform: translate(-50%, 0px) scale(1); } .module-pill:hover::after { opacity: 1; }</style>
     </head>
     <body class="bg-slate-950 text-slate-100 antialiased">
         <!-- Page wrapper -->
@@ -300,7 +200,9 @@
               The external interface and experience layer: UI, flows, and integrations that sit on
               top of the Umbra-Noesis stack. </span> </a><a class="module-pill" href="https://umbra-ai.link" target="_blank" rel="noopener"> <span class="pill-label">Umbra Link</span> <span class="pill-tooltip">
               A routing and identity endpoint that can later unify invites, shared access, and
-              public links into the ecosystem. </span> </a>
+              public links into the ecosystem. </span> </a><a class="module-pill" href="https://umbra-noesis-vpmn.net" target="_blank" rel="noopener"> <span class="pill-label">VPMN</span> <span class="pill-tooltip">
+        The Virtual Private Mesh Network layer: secure, private infrastructure for linking nodes,
+        devices, and distributed systems across the Umbra-Noesis ecosystem. </span></a> 
                     </div>
                 </section>
             </main>
